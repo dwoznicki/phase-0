@@ -27,3 +27,10 @@ PgDn
 -'help' prints info about a command
 
 #1.4 Forking and Cloning Reflection
+
+Go to github.com. If you haven't already, you'll need to make an account. In the upper right hand side of the page, you'll see a '+' sign. Click it and select "New Repository" from the drop-down menu. You'll be prompted to give your repository a name. Naming convention is to make a name without spaces. If you want to add a space, use - instead. Select the Public option so that anyone can see it. You can still control who can edit it. Select a license from the drop down menu and click Create Repository.
+You will then be taken to the page with the new repository (or repo). To fork it, or create a copy for your own use, click the 'Fork' button in the upper right hand side of the screen, below the '+' sign. This will make a copy linked to your own account which you can edit freely. The top of the page should read "your_username/new_repository."
+To clone the repo onto your computer for editing purposes, you'll need command line. First, on the right side of the GitHub page, you'll see a section called HTTPS clone URL. Copy the github.com URL there. Next, go into command line and navigate to a directory where you'll want to store the repo. Type in the command 'git clone' and paste the URL in. Press enter, and your computer will download the repo to the specified directory. That's it!
+You want to fork a repository as opposed to creating a new one so that your version of the repo will be updated whenever a commit is made to the master branch. Otherwise, you'll constantly need to update the repo with changes others have made yourself.
+
+I didn't have any trouble setting up git or GitHub. When I made my GitHub account though, my first impressions were that everything was really daunting. I didn't understand the words they were using or the initial steps they have on the home page. It all looked so technical and beyond me. But after learning what the words mean and doing it a bit myself, I feel a bit more confident about git and GitHub. So I guess what I learned is that even if something looks difficult, not to be discouraged.
