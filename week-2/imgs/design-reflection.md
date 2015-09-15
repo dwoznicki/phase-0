@@ -5,7 +5,7 @@
 </head>
 <body>
 	<h1>Design Reflection</h1>
-	<ol>
+	<ul>
 		<li>What are the 6 Phases of Web Design?</li>
 		<p>1. The first phase of Web Design is <em>gathering information</em>. In this phase, you consider the basics of the website, such as its purpose, goals, target audience, and content.</p>
 		<p>2. Phase two is <em>planning</em> your website. This involves making a site map, designing the user interface, and deciding what technologies (ie, Wordpress) will be added to the site.</p>
@@ -14,7 +14,7 @@
 		<p>5. Fifth, the designer will <em>test and deliver</em> the site. In this phase, the designer makes an last changes to fix errors and improve compatability with different browsers. Once everything is complete, the designer will upload the site to the client's server using a File Transfer Protocol.</p>
 		<p>6. The final stage is <em>maintenance</em>. This is more of an ongoing process in which the designer will continue to maintain and update the site for client when requested. Or the client can update it themselves using a Content Management System, such as Wordpress.</p>
 		<li>What is your site's primary goal or purpose? What kind of content will your site feature?</li>
-		<p>![Site Map](c:/users/daniel/documents/phase0/phase-0/week-2/imgs/site-map.png "Site Map")</p>
+		<p>![Site Map](/phase-0/week-2/imgs/site-map.png "Site Map")</p>
 		<p>The primary goal of my site is to serve as a professional portal for companies or people looking to know more about me and my web development skills. As such, it will feature links to my technical blog, my past development projects, my social media, and more in depth information about me as a person. This will help potential employers decide if I'm a good fit for them.</p>
 		<li>What is your target audience's interests and how do you see your site addressing them?</li>
 		<p>My target audience's interests will be to see my skills as a web developer and who I am as a person. The best way to show my skills as a developer is on this site. I'd like my site to be clean, smooth, but somewhat advanced technologically. As for my personality, an "About Me" section and links to my social media will be linked as well.</p>
@@ -26,6 +26,6 @@
 		<p>User experience (UX) design is a sect of design that focuses on how the user feels when using a system. UX designers focus on how easy the site is to use, how it's perceived, its utility, and its efficiency. UX design is valuable because it helps designers create an interface that's best suited to what the users want and expect. In the past, design was based on the input of the client and the designer's own preferences, leaving out the users' opinions. But users are what make an app or site popular, so it's important to get their input when designing.</p>
 		<li>Which parts of the challenge did you find tedious?</li>
 		<p>Reading about UX design was a bit tedious. The article was fairly long with a lot of information that doesn't apply to our situation quite yet, though it may well in the future. I read up through "Criticisms Of UX As A Profession", and skimmed through the rest.</p>
-	</ol>
+	</ul>
 </body>
 </html>
