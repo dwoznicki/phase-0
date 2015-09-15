@@ -14,7 +14,7 @@
 		<p>5. Fifth, the designer will <em>test and deliver</em> the site. In this phase, the designer makes an last changes to fix errors and improve compatability with different browsers. Once everything is complete, the designer will upload the site to the client's server using a File Transfer Protocol.</p>
 		<p>6. The final stage is <em>maintenance</em>. This is more of an ongoing process in which the designer will continue to maintain and update the site for client when requested. Or the client can update it themselves using a Content Management System, such as Wordpress.</p>
 		<li>What is your site's primary goal or purpose? What kind of content will your site feature?</li>
-		<p>![Site Map](c:/users/daniel/documents/phase0/phase-0/week-2/imgs/site-map.png)</p>
+		<p>![Site Map](../site-map.png)</p>
 		<p>The primary goal of my site is to serve as a professional portal for companies or people looking to know more about me and my web development skills. As such, it will feature links to my technical blog, my past development projects, my social media, and more in depth information about me as a person. This will help potential employers decide if I'm a good fit for them.</p>
 		<li>What is your target audience's interests and how do you see your site addressing them?</li>
 		<p>My target audience's interests will be to see my skills as a web developer and who I am as a person. The best way to show my skills as a developer is on this site. I'd like my site to be clean, smooth, but somewhat advanced technologically. As for my personality, an "About Me" section and links to my social media will be linked as well.</p>
