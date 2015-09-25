@@ -1,21 +1,21 @@
 <!DOCTYPE html>
-<meta charset="UTF-8">
 <html>
 <head>
+  <meta charset="UTF-8">
   <title>3.4 Chrome Dev Tools</title>
 </head>
 <body>
-  <h1>Screenshots</h1>
   <section>
-    !["screenshot1"](imgs/challenge1.png)
-    !["screenshot2"](imgs/challenge2.png)
-    !["screenshot3"](imgs/challenge3.png)
-    !["screenshot4"](imgs/challenge4.png)
-    !["screenshot5"](imgs/challenge5.png)
-    !["screenshot6"](imgs/challenge6.png)
-    !["screenshot7"](imgs/challenge7.png)
-    !["screenshot8"](imgs/challenge8.png)
-    !["screenshot9"](imgs/challenge9.png)
+    <h1>Screenshots</h1>
+    !["screenshot1"](imgs/Challenge1.png)
+    !["screenshot2"](imgs/Challenge2.png)
+    !["screenshot3"](imgs/Challenge3.png)
+    !["screenshot4"](imgs/Challenge4.png)
+    !["screenshot5"](imgs/Challenge5.png)
+    !["screenshot6"](imgs/Challenge6.png)
+    !["screenshot7"](imgs/Challenge7.png)
+    !["screenshot8"](imgs/Challenge8.png)
+    !["screenshot9"](imgs/Challenge9.png)
   </section>
   <h2>How can you use Chrome's DevTools inspector to help you format or position elements?</h2>
     <p>
@@ -47,10 +47,9 @@
       <strong>Border</strong> is essentially the edge of an element. You can give it a pixel value and it will display where the element ends.
       <strong>Padding</strong> is the space between the element and its border. You can use padding to increase the overall space an element takes up without distorting the size of the element itself. Padding is useful when making buttons since you want the button to be bigger than the text inside it.
     </p>
-  <h2>What was your impression of this challenge overall? (love, hate, and why?)
+  <h2>What was your impression of this challenge overall? (love, hate, and why?)</h2>
     <p>
       I neither loved nor hated this challenge. CSS can be very finicky, and there were several instances where it was quite difficult for us to figure out why a box wasn't behaving as expected. It could be at best befuddling, and at worst rather frustrating. But I always enjoyed that moment when we got things working. There are a lot of options to play around with in CSS, so one thing I liked is that I never felt like we had exhausted all available courses of action. It always seemed that there was something we could fiddle with.
     </p>
-  </h2>
 </body>
 </html>
