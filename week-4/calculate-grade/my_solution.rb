@@ -1,6 +1,6 @@
 # Calculate a Grade
 
-# I worked on this challenge [by myself, with: ].
+# I worked on this challenge with: Eran Chazan.
 
 
 # Your Solution Below
@@ -17,6 +17,3 @@ def get_grade(average)
   return "F"
  end
 end
-
-
-get_grade(5)

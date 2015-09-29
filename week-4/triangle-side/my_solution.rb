@@ -1,4 +1,4 @@
-# I worked on this challenge [by myself, with: ].
+# I worked on this challenge with: Eran Chazan.
 
 
 # Your Solution Below
