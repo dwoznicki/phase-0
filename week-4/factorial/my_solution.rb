@@ -1,6 +1,6 @@
 # Factorial
 
-# I worked on this challenge with: Michael Jewsinski.
+# I worked on this challenge with: Michael Jasinski.
 
 
 # Your Solution Below
