@@ -42,7 +42,7 @@ end
 
 # 3. Refactored Solution
 
-class Die
+class Die1
   def initialize(sides)
     if sides < 1
       raise ArgumentError.new "Please choose a number greater than 1"
