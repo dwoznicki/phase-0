@@ -14,6 +14,18 @@ def my_hash_finding_method(source, thing_to_find)
   source.map { |return_this, value| return_this if value == thing_to_find }.compact
 end
 
+#Refactored
+def my_array_finding_method(source, thing_to_find)
+  source.select { |return_this| return_this if return_this.to_s.include? thing_to_find }
+end
+
+def my_hash_finding_method(source, thing_to_find)
+  array = Array.new
+  source.select { |key, value| array << key if value == thing_to_find }
+  array
+end
+
+
 #====Methods====
 #-map iterates through an enumerable and returns an array of objects based on the criteria you set in the block
 #-to_s changes an object to a string
