@@ -42,17 +42,17 @@ end
 
 # Person 2
 def my_array_modification_method!(source, thing_to_modify)
-  source.dup # This line is here to make sure all tests initially fail. Delete it when you begin coding.
+  source.map! { |x| if x.is_a?Integer then x += thing_to_modify else x end }
 end
 
 def my_hash_modification_method!(source, thing_to_modify)
-  source.dup # This line is here to make sure all tests initially fail. Delete it when you begin coding.
+    source.each { |key, value| source[key] = value + thing_to_modify }
 end
 
 # Identify and describe the Ruby method(s) you implemented.
-#
-#
-#
+#map! is a destructive method which returns an array based on the block you pass it
+#is_a? returns true if the object it's called on is of the kind you specify
+#each iterates.. I couldn't find a better method than each for the hash
 
 
 # Person 3
