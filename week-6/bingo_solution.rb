@@ -121,16 +121,13 @@ end
 
 #Reflection
 =begin
-What are some general rules you can apply to nested arrays?
+How difficult was pseudocoding this challenge? What do you think of your pseudocoding style?
 
-  Nested arrays are useful for imaginining data in a grid-like structure. They are very useful for creating objects where order is important, such as a board or a map. To access data inside a nested array, you must be sure you're calling the correct layer. If you want to change the first element on line 3 of the bingo board, neither board[0] nor board[2] will get you there. You must first specify which array, then the index number of the object (board[2][0]).
 
-What are some ways you can iterate over nested arrays?
 
-  If you remember the rule above, iterating over nested arrays shouldn't be too difficult either. If you want to change every element in all your arrays, just remember that first you must iterate over the top level array, then the inner arrays. You can use any iterator that works on an array (map, select, etc.).
-
-Did you find any good new methods to implement or did you re-use one you were already familiar with? What was it and why did you decide that was a good option?
-
-  I ended up reusing a lot of methods I was already familiar with. If I had to point to a single method that I thought was very useful, it would be map! which can destructively iterate over and create a new array. It's very handy.
-
+What are the benefits of using a class for this challenge?
+How can you access coordinates in a nested array?
+What methods did you use to access and modify the array?
+How did you determine what should be an instance variable versus a local variable?
+What do you feel is most improved in your refactored solution?
 =end
