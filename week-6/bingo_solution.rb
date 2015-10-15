@@ -71,7 +71,7 @@ class BingoBoard
 #Changed to work with true bingo board
   def call
     @bingo = ["B", "I", "N", "G", "O"]
-#Letter is defined as an integer to work better with array indexes
+#Letter is defined as an integer to work better with array indexes in check
     @letter = rand 0..4
     @num = rand 1 + (15*@letter)..15 + (15*@letter)
     puts "#{@bingo[@letter]} #{@num}"
@@ -88,11 +88,14 @@ class BingoBoard
   end
 #Creates a true bingo board and sets it as the main @bingo_board
   def create
-    board = Array.new 5, []
+    board = Array.new
+#Defines the starting number in the range
     num_range = 1
+#Makes 5 new arrays, each populated by 5 unique random numbers
     5.times do
       row = Array.new
       until row.length == 5
+#Creates random number within range of 15 possible, attempts to push into the row unless the row already has that number
         random_num = rand(num_range..num_range+14)
         row << random_num unless row.include? random_num
       end
@@ -121,16 +124,28 @@ end
 
 #Reflection
 =begin
-What are some general rules you can apply to nested arrays?
+How difficult was pseudocoding this challenge? What do you think of your pseudocoding style?
 
-  Nested arrays are useful for imaginining data in a grid-like structure. They are very useful for creating objects where order is important, such as a board or a map. To access data inside a nested array, you must be sure you're calling the correct layer. If you want to change the first element on line 3 of the bingo board, neither board[0] nor board[2] will get you there. You must first specify which array, then the index number of the object (board[2][0]).
+  This challenge was not that hard to pseudocode since we were provided with the overall structure to start. I almost always start that way and then work out the specific steps needed to complete each step, so having the structure already made it easier to pseudocode. I like my pseudocoding style. It's worked well for me so far.
 
-What are some ways you can iterate over nested arrays?
+What are the benefits of using a class for this challenge?
 
-  If you remember the rule above, iterating over nested arrays shouldn't be too difficult either. If you want to change every element in all your arrays, just remember that first you must iterate over the top level array, then the inner arrays. You can use any iterator that works on an array (map, select, etc.).
+  Using a class makes the bingo board much more malleable than, say, using a method. We want to perform multiple actions with our board, such as call, check, and display it. When you want to perform multiple actions upon or using the same object, it's best to write a class. It's helpful that instance variables can be accessed by different methods inside of the class.
 
-Did you find any good new methods to implement or did you re-use one you were already familiar with? What was it and why did you decide that was a good option?
+How can you access coordinates in a nested array?
 
-  I ended up reusing a lot of methods I was already familiar with. If I had to point to a single method that I thought was very useful, it would be map! which can destructively iterate over and create a new array. It's very handy.
+  To access coordinates (as on a theoretical grid), you need to access the parent arrays, then the sub-arrays by their position inside the parent. For example, if you wanted to access the first object on the first line of our bingo board, you'd use board (to access the parent array), [0] (to access the first array), and [0] (to access the first element). In the end, you'd get board[0][0].
+
+What methods did you use to access and modify the array?
+
+  I ended up going with #map! for the check method. I chose #map! because it is conveniently destructive, an aspect other iterators tend not to have. To display, I just used #each since I didn't really need to do anything fancy. For my true bingo board creator, I was unable to make an iterator work when populating the board, so I found a different solution.
+
+How did you determine what should be an instance variable versus a local variable?
+
+  Everything that needed to be accessed by multiple methods had to be an instance variable. That turned out to be most everything in the call and check methods. However, when I got to my create method, I found that everything could pretty much work internally and divorced from the rest of the methods. For these, I used local variables, until the end where I set the board generated to the main board for the true bingo board method.
+
+What do you feel is most improved in your refactored solution?
+
+  Overall, I did a lot of shortening in my refactor. I changed a few multi-line blocks into single lines. But the best thing about my refactored solution is that it works with the true bingo board creator. I changed the call method so that it produces a valid random letter and number. I didn't show it, but I first used a very long if/else statement to correctly modify the range based on what letter was chosen. I'm a little proud of my refactor of my refactored call method where I included that modification in the range.
 
 =end

@@ -95,3 +95,20 @@ def add_ly(array)
 end
 
 add_ly(startup_names)
+
+
+#Reflection
+=begin
+What are some general rules you can apply to nested arrays?
+
+  Nested arrays are easy enough to work with if you know how to access them. When trying to affect an element, always keep in mind what level of the array that element is on. The number of the level is the number of [] that you will need to access it. Also, remember that each new nested array starts at an index of 0.
+
+What are some ways you can iterate over nested arrays?
+
+  If you want to iterate over a nested array, you could flatten it first and simply iterate over everything that way. But if you wanted to specifically iterate over certain nested arrays and not others, you would want to call an inner iterator inside of your outer iterator.
+
+Did you find any good new methods to implement or did you re-use one you were already familiar with? What was it and why did you decide that was a good option?
+
+  To iterate over everything, my partner and I opted to write a recursive iterator. Our iterator checks whether each element is an array or not. If it is, it will call itself to iterate over that array. We could have easily done the same thing by flattening the array first, but it was kinda fun to write a recursive solution.
+
+=end
