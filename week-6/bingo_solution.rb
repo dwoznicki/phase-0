@@ -29,7 +29,7 @@
   #Put numbers into a list UNLESS they're already in it
   #Replace the 3,3 with "X"
 
-Initial Solution
+#Initial Solution
 
 class BingoBoard
 
@@ -120,7 +120,6 @@ board = [[47, 44, 71, 8, 88],
 new_game = BingoBoard.new(board)
 new_game.create
 
-end
 
 #Reflection
 =begin
@@ -146,6 +145,6 @@ How did you determine what should be an instance variable versus a local variabl
 
 What do you feel is most improved in your refactored solution?
 
-  Overall, I did a lot of shortening in my refactor. I changed a few multi-line blocks into single lines. But the best thing about my refactored solution is that it works with the true bingo board creator. I changed the call method so that it produces a valid random letter and number. I didn't show it, but I first used a very long if/else statement to correctly modify the range based on what letter was chosen. I'm a little proud of my refactor of my refactored call method where I included that modification in the range.
+  Overall, I did a lot of shortening in my refactor. I changed a few multi-line blocks into single lines. But the best thing about my refactored solution is that it works with the true bingo board creator. I changed the call method so that it produces a valid random letter and number. I didn't show it, but I first used a very long if/else statement to correctly modify the range based on what letter was chosen. I'm proud of my refactor of my refactored call method where I included that modification in the range.
 
 =end
