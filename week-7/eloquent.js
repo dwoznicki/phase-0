@@ -28,7 +28,7 @@ for (var n = 1; n <= 100; n++) {
     console.log("Buzz");
   else
     console.log(n);
-// }
+}
 //Chess Board
 var size = 8;
 var board = "";
