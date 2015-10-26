@@ -98,6 +98,23 @@ function median(numbers){
   if(numbers.length % 2){
     return numbers[half];
   } else {
-      return (numbers[half-1] + numbers[half]) / 2.0;
+    return (numbers[half-1] + numbers[half]) / 2.0;
   }
 }
+
+/*
+=====User Stories=====
+1. As a user, I want the function sum to take an array of numbers, add them
+all together, and then print out the sum.
+2. As a user, I want the function mean to take an array of numbers, add them
+all together and then divide that sum by the number of numbers in the array
+to provide the mean.
+3. As a user, I want the function median to take an array of numbers, and
+return the value in the middle index of an array of odd length or the
+average of the two numbers in the middle for an even array.
+
+=====Release 5 Summary=====
+So it looks like the functions are working just fine! I made a few
+alterations so the functions returned the answers to pass the test.js file.
+Other than that, good work!
+*/
