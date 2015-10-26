@@ -1,4 +1,29 @@
+function sum(numbers){
+var total = 0
+  for(var i = 0; i < numbers.length; i++){
+   total = total + numbers[i];
+  }
+    return total
+}
 
+function mean(numbers){
+  var sum = 0;
+  for(var i = 0; i < numbers.length; i++){
+  sum += numbers[i];
+  }
+  return (sum/numbers.length)
+}
+
+function median(numbers){
+    numbers.sort( function(a,b) {return a - b;} );
+    var half = Math.floor(numbers.length/2);
+
+    if(numbers.length % 2){
+        return numbers[half];
+    } else {
+        return (numbers[half-1] + numbers[half]) / 2.0;
+      }
+}
 // Add the finished solution here when you receive it.
 // __________________________________________
 // Tests:  Do not alter code below this line.
