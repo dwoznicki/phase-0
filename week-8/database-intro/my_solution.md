@@ -1,3 +1,4 @@
+#Release 5
 1. SELECT * FROM states;
 2. SELECT * FROM regions;
 3. SELECT state_name, population FROM states;
@@ -18,7 +19,7 @@
     JOIN states ON regions.id=states.region_id
     ORDER BY region_id ASC;
 
-![screenshot](/outfit_schema.png)
+![screenshot](./outfit_schema.png)
 
 #=====Reflection=====
 ###What are databases for?
