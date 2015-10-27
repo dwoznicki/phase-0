@@ -18,10 +18,9 @@
     JOIN states ON regions.id=states.region_id
     ORDER BY region_id ASC;
 
-Outfit schema
-![screenshot](/outfit_schema.png "Outfit Schema")
+![screenshot](/outfit_schema.png)
 
-=====Reflection=====
+#=====Reflection=====
 ###What are databases for?
 
   Databases are files that store lists of information. Databases make it
