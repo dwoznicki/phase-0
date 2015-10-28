@@ -43,22 +43,23 @@ def random_num(min, max)
    rand(max - min + 1) + min
 end
 
-def assert
-  raise "Invalid assertion" unless yield
-  p true
+def assert message, test_number
+  raise "Invalid assertion: #{message}" unless yield
+  puts "#{test_number}. true"
 end
 # =====Sucesses=====
+assert("Expected separate_comma to return a string", "1") { separate_comma(31).is_a?(String) == true }
 # /^ to start, $/ to end, \d{num of digits}
-assert { /^\d{1,3}$/.match(separate_comma random_num(0,999)) != nil }
-assert { /^\d{1},\d{3}$/.match(separate_comma random_num(1000,9999)) != nil }
-assert { /^\d{2},\d{3}$/.match(separate_comma random_num(10000,99999)) != nil }
-assert { /^\d{3},\d{3}$/.match(separate_comma random_num(100000,999999)) != nil }
-assert { /^\d{1},\d{3},\d{3}$/.match(separate_comma random_num(1000000,9999999)) != nil }
-assert { /^\d{2},\d{3},\d{3}$/.match(separate_comma random_num(10000000,99999999)) != nil }
+assert("Expected no commas for number 0..999", "2") { /^\d{1,3}$/.match(separate_comma random_num(0,999)) != nil }
+assert("Expected 1 comma for number 1000..9999", "3") { /^\d{1},\d{3}$/.match(separate_comma random_num(1000,9999)) != nil }
+assert("Expected 1 comma for number 10000..99999", "4") { /^\d{2},\d{3}$/.match(separate_comma random_num(10000,99999)) != nil }
+assert("Expected 1 comma for number 100000..999999", "5") { /^\d{3},\d{3}$/.match(separate_comma random_num(100000,999999)) != nil }
+assert("Expected 2 commas for number 1000000..9999999", "6") { /^\d{1},\d{3},\d{3}$/.match(separate_comma random_num(1000000,9999999)) != nil }
+assert("Expected 2 commas for number 10000000..9999999", "7") { /^\d{2},\d{3},\d{3}$/.match(separate_comma random_num(10000000,99999999)) != nil }
 # =====Failures=====
-assert { /\,$/.match(separate_comma random_num(0,999)) == nil }
-assert { /^\d{4}$/.match(separate_comma random_num(1000,9999)) == nil }
-assert { /^\d{2},\d{4}$/.match(separate_comma random_num(100000,999999)) == nil }
+assert("Comma found in number 0..999", "8") { /\,$/.match(separate_comma random_num(0,999)) == nil }
+assert("No comma found in number 1000..9999", "9") { /^\d{4}$/.match(separate_comma random_num(1000,9999)) == nil }
+assert("Comma found in wrong place for number 100000..99999", "10") { /^\d{2},\d{4}$/.match(separate_comma random_num(100000,999999)) == nil }
 
 =begin
 # 5. Reflection
