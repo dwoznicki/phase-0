@@ -48,6 +48,7 @@ def assert
   p true
 end
 # =====Sucesses=====
+# /^ to start, $/ to end, \d{num of digits}
 assert { /^\d{1,3}$/.match(separate_comma random_num(0,999)) != nil }
 assert { /^\d{1},\d{3}$/.match(separate_comma random_num(1000,9999)) != nil }
 assert { /^\d{2},\d{3}$/.match(separate_comma random_num(10000,99999)) != nil }
