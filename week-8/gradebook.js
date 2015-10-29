@@ -22,10 +22,28 @@ var scores = [ [80, 70, 70, 100],
 
 // __________________________________________
 // Write your code below.
+var gradebook = {};
+for(var value in students) {
+  gradebook[students[value]] = {};
+}
+var index = 0
+for(var grades in gradebook) {
+  gradebook[grades].testScores = scores[index];
+  index ++
+}
+gradebook.addScore = function (name, score) {
+  gradebook[name].testScores.push(score)
+}
 
 
+gradebook.getAverage = function(name) {
+  return average(gradebook[name].testScores)
+}
 
-
+var average = function(array) {
+  return array.reduce(function(sum, value) {
+    return sum + value; }) / array.length
+}
 
 
 
@@ -33,24 +51,54 @@ var scores = [ [80, 70, 70, 100],
 // __________________________________________
 // Refactored Solution
 
+// Adds students and test scores to gradebook
+var gradebook = {};
+for(var i = 0; i < students.length; i++) {
+  gradebook[students[i]] = {};
+  gradebook[students[i]].testScores = scores[i]
+}
+// Adds new test score to student record
+gradebook.addScore = function (name, score) {
+  gradebook[name].testScores.push(score)
+}
+// Returns average score for given student
+gradebook.getAverage = function(name) {
+  return average(gradebook[name].testScores)
+}
+var average = function(array) {
+  return array.reduce(sumOfElements) / array.length
+}
+var sumOfElements = function(sum, value) {
+  return sum + value; }
 
 
 
-
-
-
-
+/*
 // __________________________________________
 // Reflect
+What did you learn about adding functions to objects?
 
+  I learned that you can add functions using dot notation. I guess this
+  wasn't so much a discovery as it was a reinforcement. It's good to keep
+  in mind, though.
 
+How did you iterate over nested arrays in JavaScript?
 
+  I don't believe we ended up iterating over the test scores inside of the
+  scores array. If we had needed to, I believe we would have used a nested
+  for loop: one to iterate over each array, and another to iterate over each
+  element in the array.
 
+Were there any new methods you were able to incorporate? If so, what were they and how did they work?
 
+  Yes! We knew the perfect iterating method for getting an average in Ruby
+  was #reduce. We were bemoaning the lack of it in JS, when my partner
+  suggested we look online and see if we could find an equivilant. It turns
+  out that JavaScript has #reduce as well! It's not quite as convenient
+  as Ruby, where you can simply pass in the symbole :+ to tell it you want
+  the sum of each element, but it's still quite useful.
 
-
-
-
+*/
 // __________________________________________
 // Test Code:  Do not alter code below this line.
 
