@@ -98,7 +98,7 @@
 
 class Car
 
-  attr_reader :model, :color
+  attr_reader :speed_limit
 
   def initialize(model, color)
     @total_distance = 0
@@ -120,10 +120,6 @@ class Car
       @speed_limit = new_speed
       puts "You are driving at #{new_speed} mph"
     end
-  end
-
-  def check_speed
-    puts "You are driving at #{@speed_limit} mph"
   end
 
   def turn (direction)
@@ -167,6 +163,9 @@ class Pizza
 end
 
 
+
+
+
 # 1. DRIVER TESTS GO BELOW THIS LINE
 new_car = Car.new("Infiniti", "black")
 new_car.pizza("pepperoni")
@@ -174,7 +173,7 @@ new_car.pizza("cheese")
 new_car.pizza("meat lover")
 new_car.drive(0.25, 25)
 new_car.turn("right")
-new_car.check_speed
+puts "You are driving at #{new_car.speed_limit} mph"
 new_car.change_speed(15)
 new_car.drive(0.25, 15)
 new_car.turn("left")
